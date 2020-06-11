@@ -5,6 +5,9 @@ import * as dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
+import { itemsRouter } from "./items/items.router";
+import { errorHandler } from "./middlewares/error";
+import { notFoundHandler } from "./middlewares/not-found";
 
 // TODO: Extract out in Config file
 dotenv.config();
@@ -26,6 +29,17 @@ const app = express();
 app.use(helmet());
 app.use(cors());
 app.use(express.json());
+
+/**
+ * Routes
+ */
+app.use("/items", itemsRouter);
+
+/**
+ * Error Handler
+ */
+app.use(errorHandler);
+app.use(notFoundHandler);
 
 /**
  * Server Activation
