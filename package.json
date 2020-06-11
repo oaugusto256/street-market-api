@@ -1,7 +1,7 @@
 {
   "name": "fair-street-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "A REST API to help people find street markets around.",
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts",
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/kelvinmaues/fair-street-api.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kelvin Gaia Maues",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kelvinmaues/fair-street-api/issues"
