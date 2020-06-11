@@ -13,7 +13,11 @@
 /local
 
 # env variables
-*.env
+.env
+.env.development
+.env.local
+.env.production
+.env.staging
 
 # dist folder
 /dist
