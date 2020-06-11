@@ -1,23 +1,9 @@
 import mongoose from "mongoose";
-import { Address } from "../types/address.interface";
-import { UserType } from "../types/user-type.interface";
+import { User as UserInterface } from "../types/user.interface";
 
 const Schema = mongoose.Schema;
 
-export type UserDocument = mongoose.Document & {
-  email: string;
-  firstName: string;
-  lastName: string;
-  password: string;
-  passwordResetToken: string;
-  passwordResetExpires: Date;
-  whatsapp: string;
-  gender: string;
-  pictureUrl: string;
-  birthDate: Date;
-  userType: UserType;
-  address: Address;
-};
+export type UserDocument = mongoose.Document & UserInterface;
 
 const userSchema = new Schema({
   email: { type: String, unique: true, required: true },

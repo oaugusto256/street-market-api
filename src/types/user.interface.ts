@@ -1,17 +1,17 @@
 import { Address } from "./address.interface";
+import { UserType } from "./user-type.interface";
 
 export interface User {
-  id: string;
-  name: string;
   email: string;
   firstName: string;
   lastName: string;
+  password: string;
+  passwordResetToken: string;
+  passwordResetExpires: Date;
+  whatsapp: string;
   gender: string;
   pictureUrl: string;
-  address: Address;
   birthDate: Date;
-  userType: string;
-  password: string;
-  resetToken: string;
-  resetTokenExpiration: string;
+  userType: UserType;
+  address: Address;
 }
