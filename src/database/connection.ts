@@ -1,6 +1,8 @@
 import mongoose from "mongoose";
 
-export default mongoose.connect("mongodb://localhost:27017/test", {
+const mongoURI = process.env.MONGO_URI;
+
+export default mongoose.connect(mongoURI as string, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
