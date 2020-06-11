@@ -2,6 +2,8 @@
  * Required External Modules
  */
 import * as dotenv from "dotenv";
+import dotenvExpand from "dotenv-expand";
+require("custom-env").env();
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
@@ -10,7 +12,8 @@ import { errorHandler } from "./middlewares/error";
 import { notFoundHandler } from "./middlewares/not-found";
 
 // TODO: Extract out in Config file
-dotenv.config();
+const env = dotenv.config();
+dotenvExpand(env);
 
 /**
  * App Variables
@@ -21,7 +24,7 @@ if (!process.env.PORT) {
 
 const PORT: number = parseInt(process.env.PORT as string, 10);
 
-console.log(process.env.PORT)
+console.log(process.env);
 
 const app = express();
 
