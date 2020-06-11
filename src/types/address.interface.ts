@@ -6,5 +6,5 @@ export interface Address {
   state: string;
   country: string;
   zipcode: string;
-  location: [number, number];
+  location?: [number, number];
 }

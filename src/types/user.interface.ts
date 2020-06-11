@@ -4,8 +4,8 @@ export interface User {
   id: string;
   name: string;
   email: string;
-  first_name: string;
-  last_name: string;
+  firstName: string;
+  lastName: string;
   gender: string;
   pictureUrl: string;
   address: Address;
