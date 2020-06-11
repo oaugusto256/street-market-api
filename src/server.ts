@@ -7,9 +7,11 @@ require("custom-env").env();
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
+import bodyParser from "body-parser";
 import { itemsRouter } from "./items/items.router";
 import { errorHandler } from "./middlewares/error";
 import { notFoundHandler } from "./middlewares/not-found";
+import mongooseConnection from "./database/connection";
 
 // TODO: Extract out in Config file
 const env = dotenv.config();
@@ -24,8 +26,6 @@ if (!process.env.PORT) {
 
 const PORT: number = parseInt(process.env.PORT as string, 10);
 
-console.log(process.env);
-
 const app = express();
 
 /**
@@ -34,6 +34,11 @@ const app = express();
 app.use(helmet());
 app.use(cors());
 app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// view engine
+app.set("view engine", "ejs");
+app.set("views", "views");
 
 /**
  * Routes
@@ -49,16 +54,18 @@ app.use(notFoundHandler);
 /**
  * Server Activation
  */
-const server = app.listen(PORT, () => {
-  console.log(`Listening and Firing on port ${PORT} 🌎🚀`);
-});
+const server = () =>
+  app.listen(PORT, () => {
+    console.log(
+      `Running in ENV: '${process.env.APP_ENV}' and Listening on port ${PORT} 🌎🚀`
+    );
+    console.log("Press CTRL-C to stop\n");
+  });
 
 /**
  * Database Connection
  */
-// const server = app.listen(PORT, () => {
-//   console.log(`Listening and Firing on port ${PORT} 🌎🚀`);
-// });
+mongooseConnection.then(() => server()).catch((err) => console.log(err));
 
 /**
  * Webpack HMR Activation
