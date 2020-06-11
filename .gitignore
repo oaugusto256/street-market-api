@@ -12,6 +12,9 @@
 # local scripts
 /local
 
+# env variables
+*.env
+
 # misc
 .DS_Store
 
