@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index",
-    "webpack": "webpack --config webpack.config.ts"
+    "dev": "NODE_ENV=staging && ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -35,11 +35,11 @@
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.6",
     "@types/helmet": "^0.0.47",
+    "@types/mongoose": "^5.7.24",
     "@types/node": "^14.0.13",
-    "ts-loader": "^7.0.5",
-    "typescript": "^3.9.5",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-node-externals": "^1.7.2"
+    "cross-env": "^7.0.2",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.9.5"
   }
 }

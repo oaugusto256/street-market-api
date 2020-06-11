@@ -21,6 +21,8 @@ if (!process.env.PORT) {
 
 const PORT: number = parseInt(process.env.PORT as string, 10);
 
+console.log(process.env.PORT)
+
 const app = express();
 
 /**
@@ -47,6 +49,13 @@ app.use(notFoundHandler);
 const server = app.listen(PORT, () => {
   console.log(`Listening and Firing on port ${PORT} 🌎🚀`);
 });
+
+/**
+ * Database Connection
+ */
+// const server = app.listen(PORT, () => {
+//   console.log(`Listening and Firing on port ${PORT} 🌎🚀`);
+// });
 
 /**
  * Webpack HMR Activation
