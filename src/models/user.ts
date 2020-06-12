@@ -26,6 +26,7 @@ const userSchema = new Schema({
     country: String,
     zipcode: String,
   },
+  isActive: Boolean,
 });
 
 export const User = mongoose.model<UserDocument>("User", userSchema);

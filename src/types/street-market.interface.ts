@@ -6,15 +6,15 @@ import { CommonProduct } from "./common-product.interface";
 
 export interface StreetMarket {
   id: string;
+  userId: string;
   name: string;
-  email?: string;
-  whatsapp: string;
   profileImageUrl?: string;
-  imageUrls?: [ImageURLs];
+  imageUrls?: ImageURLs[];
   address: Address;
   locationType: string;
   marketType: string;
-  workingDaysAndHours: [WorkingDaysAndHours];
-  commonProductTypes: [CommonProduct];
+  workingDaysAndHours: WorkingDaysAndHours[];
+  commonProductTypes: CommonProduct[];
   services: [MarketService];
+  isActive: boolean;
 }
