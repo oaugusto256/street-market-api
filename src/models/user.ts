@@ -1,4 +1,11 @@
+/**
+ * Required External Modules
+ */
 import mongoose from "mongoose";
+
+/**
+ * Data Model Interfaces
+ */
 import { User as UserInterface } from "../types/user.interface";
 
 const Schema = mongoose.Schema;

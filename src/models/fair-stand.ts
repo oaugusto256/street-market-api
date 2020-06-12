@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
-import { StreetMarket as StreetMarketInterface } from "../types/street-market.interface";
+import { FairStand as FairStandInterface } from "../types/fair-stand";
 
 const Schema = mongoose.Schema;
 
-export type StreetMarketDocument = mongoose.Document & StreetMarketInterface;
+export type StreetMarketDocument = mongoose.Document & FairStandInterface;
 
-const streetMarketSchema = new Schema({
+const fairStandSchema = new Schema({
   name: { type: String, required: true },
   profileImageUrl: String,
   imageUrls: Array,
@@ -32,7 +32,7 @@ const streetMarketSchema = new Schema({
   },
 });
 
-export const StreetMarket = mongoose.model<StreetMarketDocument>(
-  "StreetMarket",
-  streetMarketSchema
+export const FairStand = mongoose.model<StreetMarketDocument>(
+  "FairStand",
+  fairStandSchema
 );

@@ -12,6 +12,7 @@ import { itemsRouter } from "./items/items.router";
 import { errorHandler } from "./middlewares/error";
 import { notFoundHandler } from "./middlewares/not-found";
 import mongooseConnection from "./database/connection";
+import { authRouter } from "./routes/auth";
 
 // TODO: Extract out in Config file
 const env = dotenv.config();
@@ -43,6 +44,7 @@ app.set("views", "views");
 /**
  * Routes
  */
+app.use(authRouter);
 app.use("/items", itemsRouter);
 
 /**

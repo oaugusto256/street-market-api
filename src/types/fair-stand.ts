@@ -4,7 +4,7 @@ import { WorkingDaysAndHours } from "./working-days-and-hours.interface";
 import { MarketService } from "./market-service.interface";
 import { CommonProduct } from "./common-product.interface";
 
-export interface StreetMarket {
+export interface FairStand {
   id: string;
   userId: string;
   name: string;
