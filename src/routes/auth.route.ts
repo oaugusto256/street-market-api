@@ -2,7 +2,7 @@
  * Required External Modules and Interfaces
  */
 import express from "express";
-import * as authController from "../controllers/auth";
+import * as authController from "../controllers/auth.controller";
 /**
  * Router Definition
  */

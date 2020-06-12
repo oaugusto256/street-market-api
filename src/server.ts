@@ -12,7 +12,7 @@ import { itemsRouter } from "./items/items.router";
 import { errorHandler } from "./middlewares/error";
 import { notFoundHandler } from "./middlewares/not-found";
 import mongooseConnection from "./database/connection";
-import { authRouter } from "./routes/auth";
+import { authRouter } from "./routes/auth.route";
 
 // TODO: Extract out in Config file
 const env = dotenv.config();

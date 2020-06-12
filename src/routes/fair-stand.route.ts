@@ -1,7 +1,7 @@
 /**
  * Required External Modules and Interfaces
  */
-import express, { Request, Response } from "express";
+import express from "express";
 
 /**
  * Router Definition
@@ -14,25 +14,25 @@ export const fairStandRouter = express.Router();
 
 /**
  * get all items
- * GET items/
+ * GET fair_stands/
  */
 
 /**
  * get a single item using an id parameter
- * GET items/:id
+ * GET fair_stands/:id
  */
 
 /**
  * create an item
- * POST items/
+ * POST fair_stands/
  */
 
 /**
  * update an item
- * PUT items/
+ * PUT fair_stands/
  */
 
 /**
  * delete an item using an id parameter
- * DELETE items/:id
+ * DELETE fair_stands/:id
  */
