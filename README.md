@@ -9,13 +9,17 @@
 
 In the project directory, you can run:
 
-### `yarn start`
+### `yarn dev`
 
 Runs the app in the development mode on port **7000**.<br />
 
 ### `yarn build`
 
 Builds the app for production to the `dist` folder.<br />
+
+## Project Documentation
+
+* [Concepts](./docs/concepts.md)
 
 ## Author
 
