@@ -5,8 +5,6 @@
   </h1>
 </div>
 
----
-
 ## Available Scripts
 
 In the project directory, you can run:
