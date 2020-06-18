@@ -1,1 +1,1 @@
-export type UserType = "marketer" | "client";
+export type UserType = "marketer" | "user";

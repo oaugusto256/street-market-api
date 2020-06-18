@@ -24,6 +24,7 @@ const userSchema = new Schema(
     gender: String,
     pictureUrl: String,
     birthDate: Date,
+    ethnicity: String,
     userType: { type: String, required: true },
     address: {
       street: String,
@@ -33,6 +34,7 @@ const userSchema = new Schema(
       state: String,
       country: String,
       zipcode: String,
+      location: [Number, Number],
     },
     isActive: Boolean,
   },

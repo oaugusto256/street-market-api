@@ -1,7 +1,7 @@
 export interface WorkingDaysAndHours {
-  id: string;
-  day: string;
-  openTime: string;
-  closeTime: string;
+  _id: string;
+  weekDay: string;
+  openingTime: string;
+  closingTime: string;
   isActive: boolean;
 }
