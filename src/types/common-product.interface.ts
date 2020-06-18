@@ -1,5 +1,4 @@
 export interface CommonProduct {
-  id: string;
+  _id: string;
   name: string;
-  isActive: boolean;
 }

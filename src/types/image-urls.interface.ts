@@ -1,5 +1,5 @@
 export interface ImageURLs {
-  id: string;
+  _id: string;
   url: string;
   isActive: boolean;
 }
