@@ -6,7 +6,7 @@ import express from "express";
 /**
  * Router Definition
  */
-export const fairStandRouter = express.Router();
+export const fairRouter = express.Router();
 
 /**
  * Controller Definitions

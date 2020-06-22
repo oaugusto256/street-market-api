@@ -1,6 +1,14 @@
 import { Request, Response, NextFunction } from "express";
 import { User } from "../models/user";
 
+/**
+ * Pattern to CRUD methods
+ * index() => list some data
+ * show() => get a specific data
+ * update() => update a data
+ * delete() => delete a data
+ */
+
 export const postSignUp = async (
   req: Request,
   res: Response,
