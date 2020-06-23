@@ -12,9 +12,18 @@
 # local scripts
 /local
 
+# env variables
+.env
+.env.development
+.env.local
+.env.production
+.env.staging
+
+# dist folder
+/dist
+
 # misc
 .DS_Store
-.env
 
 npm-debug.log*
 yarn-debug.log*
