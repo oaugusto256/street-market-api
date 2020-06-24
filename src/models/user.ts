@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 /**
  * Data Model Interfaces
  */
-import { User as UserInterface } from "../types/user.interface";
+import { IUser as UserInterface } from "../types/user.interface";
 
 const Schema = mongoose.Schema;
 
@@ -20,7 +20,7 @@ const userSchema = new Schema(
     password: { type: String, required: true },
     passwordResetToken: String,
     passwordResetExpires: Date,
-    whatsapp: String,
+    whatsapp: { type: String, required: true },
     gender: String,
     pictureUrl: String,
     birthDate: Date,

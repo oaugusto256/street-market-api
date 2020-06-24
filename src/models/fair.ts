@@ -2,14 +2,14 @@
  * Required External Modules
  */
 import mongoose from "mongoose";
-import { Fair as FairInterface } from "../types/fair.interface";
+import { IFair } from "../types/fair.interface";
 
 const Schema = mongoose.Schema;
 
 /**
  * Data Model Interfaces
  */
-export type FairDocument = mongoose.Document & FairInterface;
+export type FairDocument = mongoose.Document & IFair;
 
 const fairSchema = new Schema(
   {

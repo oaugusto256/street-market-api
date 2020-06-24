@@ -7,13 +7,14 @@ const Schema = mongoose.Schema;
 /**
  * Data Model Interfaces
  */
-import { Stall as StallInterface } from "../types/stall.interface";
+import { IStall } from "../types/stall.interface";
 
-export type StallDocument = mongoose.Document & StallInterface;
+export type StallDocument = mongoose.Document & IStall;
 
 const stallSchema = new Schema(
   {
     name: { type: String, required: true },
+    description: { type: String, required: true },
     marketerId: {
       type: Schema.Types.ObjectId,
       ref: "Marketer",

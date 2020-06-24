@@ -1,4 +1,4 @@
-export interface CommonProduct {
+export interface ICommonProduct {
   _id: string;
   name: string;
 }

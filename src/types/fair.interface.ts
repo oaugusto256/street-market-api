@@ -1,9 +1,9 @@
-import { Address } from "./address.interface";
+import { IAddress } from "./address.interface";
 
-export interface Fair {
+export interface IFair {
   _id: string;
   name: string;
-  address: Address;
+  address: IAddress;
   fairType: string;
   stallMembers: string[];
 }

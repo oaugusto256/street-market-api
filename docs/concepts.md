@@ -9,5 +9,5 @@
 * #### Fair
   It is a space for marketers and exhibitors to sell their products to the public in a specific location and region.
 
-* #### Stall
+* #### Fair Stall
   It is the local business of the marketer to sell and exhibit their products at a local fair.

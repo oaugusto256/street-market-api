@@ -1,20 +1,21 @@
-import { ImageURLs } from "./image-urls.interface";
-import { Address } from "./address.interface";
-import { WorkingDaysAndHours } from "./working-days-and-hours.interface";
-import { StallService } from "./stall-service.interface";
-import { CommonProduct } from "./common-product.interface";
+import { IImageURLs } from "./image-urls.interface";
+import { IAddress } from "./address.interface";
+import { IWorkingDaysAndHours } from "./working-days-and-hours.interface";
+import { IStallService } from "./stall-service.interface";
+import { ICommonProduct } from "./common-product.interface";
 
-export interface Stall {
+export interface IStall {
   _id: string;
   marketerId: string;
   name: string;
+  description: string;
   profileImageUrl?: string;
-  imageUrls?: ImageURLs[];
-  address: Address;
+  imageUrls?: IImageURLs[];
+  address: IAddress;
   locationType: string;
   stallType: string;
-  workingDaysAndHours: WorkingDaysAndHours[];
-  commonProductTypes: CommonProduct[];
-  services: [StallService];
+  workingDaysAndHours: IWorkingDaysAndHours[];
+  commonProductTypes: ICommonProduct[];
+  services: [IStallService];
   isActive: boolean;
 }

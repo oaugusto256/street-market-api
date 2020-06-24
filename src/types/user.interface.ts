@@ -1,7 +1,7 @@
-import { Address } from "./address.interface";
-import { UserType } from "./user-type.interface";
+import { IAddress } from "./address.interface";
+import { IUserType } from "./user-type.interface";
 
-export interface User {
+export interface IUser {
   _id: string;
   email: string;
   firstName: string;
@@ -13,7 +13,7 @@ export interface User {
   gender: string;
   pictureUrl: string;
   birthDate: Date;
-  userType: UserType;
-  address: Address;
+  userType: IUserType;
+  address: IAddress;
   isActive: boolean;
 }

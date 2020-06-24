@@ -1,4 +1,4 @@
-export interface WorkingDaysAndHours {
+export interface IWorkingDaysAndHours {
   _id: string;
   weekDay: string;
   openingTime: string;

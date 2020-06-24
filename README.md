@@ -17,9 +17,10 @@ Runs the app in the development mode on port **7000**.<br />
 
 Builds the app for production to the `dist` folder.<br />
 
-## Project Documentation
+## Project Documentation :clipboard:
 
 * [Concepts](./docs/concepts.md)
+* [Features](./docs/features.md)
 
 ## Author
 
