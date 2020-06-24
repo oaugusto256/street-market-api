@@ -54,5 +54,6 @@ The user stories that make up this app center around four distinct roles:
 - [ ] As a **user** I want to filter the **stalls** by common product types based in my location.
 - [ ] As a **user** I want to filter the **stalls** by services offered based in my location.
 - [ ] As a **user** I want to select a **stall** and see the profile with general information and a whatsapp and e-mail buttons to make contact.
+- [ ] As a **user** I want to option to view the **fair stalls** as their groups of **fairs**.
 
 **Bonus Features**
